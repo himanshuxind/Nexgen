@@ -17,6 +17,7 @@ export const Route = createFileRoute("/")({
     { property: "og:title", content: "NexGen Arcade — We Build What Comes Next" },
     { property: "og:description", content: "NexGen Arcade explores AI, robotics, computer vision, IoT, assistive technology, smart agriculture, and experimental technology projects." },
     { property: "og:type", content: "website" },
+    { tagName: "link", rel: "canonical", href: "https://nexgenarcade.vercel.app/" },
     { name: "twitter:card", content: "summary_large_image" },
   ] }),
   component: Index,
