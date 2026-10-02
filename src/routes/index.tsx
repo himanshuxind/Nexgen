@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
     { title: "NexGen Arcade — We Build What Comes Next" },
     { name: "description", content: "NexGen Arcade is an independent technology and innovation venture exploring ambitious ideas, experimental systems, and real-world products." },
     { property: "og:title", content: "NexGen Arcade — We Build What Comes Next" },
-    { property: "og:description", content: "" },
+    { property: "og:description", content: "NexGen Arcade explores AI, robotics, computer vision, IoT, assistive technology, smart agriculture, and experimental technology projects." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ] }),
