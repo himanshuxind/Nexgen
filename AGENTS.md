@@ -1,0 +1,5 @@
+- Keep project content in `src/data/projects.ts` and render it through reusable showcase/detail components, so future concepts require data additions rather than page rewrites.
+- Use one lightweight procedural Three.js Core component for recurring interactive visuals, with reduced-motion fallback and cleanup, to keep scenes consistent and performant.
+- Keep section navigation on the homepage with native scrolling and observed active sections, because reverse scrolling and direct jumps must remain predictable.
+- Use dynamically loaded GSAP ScrollTrigger for optional cinematic scroll enhancement while preserving native scrolling and reduced-motion behavior.
+- Keep the experimental Arcade interaction isolated in its own component so drag state never rerenders the homepage or 3D scene.
