@@ -1,5 +1,5 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "nexgen-arcade",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -95,5 +95,6 @@
     "typescript-eslint": "^8.56.1",
     "vite": "8.1.5",
     "vitest": "^4.1.10"
-  }
+  },
+  "description": "NexGen Arcade — independent technology and innovation venture exploring AI, robotics, computer vision, IoT, assistive technology, and smart agriculture."
 }
