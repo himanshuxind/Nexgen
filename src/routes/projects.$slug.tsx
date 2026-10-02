@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => { const project = projects.find(p => p.slug === params.slug); if (!project) throw notFound(); return project; },
-  head: ({ loaderData }) => { const title = `${loaderData?.title ?? "Project"} | NexGen Arcade`; const description = loaderData?.description ?? "Explore experimental technology projects from NexGen Arcade."; return { meta: [ { title }, { name: "description", content: description }, { name: "robots", content: "index,follow" }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary_large_image" } ] }; },
+  head: ({ loaderData }) => { const title = `${loaderData?.title ?? "Project"} | NexGen Arcade`; const description = loaderData?.description ?? "Explore experimental technology projects from NexGen Arcade."; return { meta: [ { title }, { name: "description", content: description }, { name: "robots", content: "index,follow" }, { tagName: "link", rel: "canonical", href: `https://nexgenarcade.vercel.app/projects/${loaderData?.slug ?? ""}` }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary_large_image" } ] }; },
   component: ProjectDetail,
 });
 function ProjectDetail() {
